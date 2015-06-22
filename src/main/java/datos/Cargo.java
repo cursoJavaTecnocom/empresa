@@ -4,7 +4,6 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.util.List;
 
-/********** Modificado por David ***************/
 /**
  * The persistent class for the CARGOS database table.
  * 
