@@ -84,7 +84,7 @@ public class Datospersonale implements Serializable {
 		return empleado;
 	}
 
-	
+	//Raquel: texto de los datos personales
 	public String getTexto() {
 		return getEstadoscivile().getDescripcion()+" - "+getHijo().getChicos()+" - "+getHijo().getChicas();
 	}
