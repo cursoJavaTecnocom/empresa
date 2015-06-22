@@ -22,6 +22,7 @@ public class Cargo implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 
+	
 	private String descripcion;
 
 	//bi-directional many-to-one association to Datoslaborale
