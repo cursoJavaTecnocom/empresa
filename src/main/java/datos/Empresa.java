@@ -1,5 +1,5 @@
 package datos;
-
+//modificado por el profe   
 import java.io.Serializable;
 import javax.persistence.*;
 import java.util.List;
