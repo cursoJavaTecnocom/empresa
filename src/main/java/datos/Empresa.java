@@ -9,6 +9,10 @@ import java.util.List;
  * The persistent class for the EMPRESAS database table.
  * 
  */
+
+/*
+ * MODIFICADO POR JAVIER EL DE MADRID
+ */
 @Entity
 @Table(name="EMPRESAS")
 @NamedQuery(name="Empresa.findAll", query="SELECT e FROM Empresa e")

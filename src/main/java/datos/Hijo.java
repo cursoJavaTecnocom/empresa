@@ -4,6 +4,7 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.util.List;
 
+/********** Modificado por David *****************/
 
 /**
  * The persistent class for the HIJOS database table.
