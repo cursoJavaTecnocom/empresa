@@ -7,6 +7,7 @@ import java.util.TreeSet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
@@ -30,6 +31,7 @@ import empresa.delegates.EmpresaDelegate;
  * Handles requests for the application home page.
  */
 @Controller
+@Qualifier("homeControler")
 public class HomeController {
 
 	private static final Logger logger = LoggerFactory
@@ -461,6 +463,19 @@ public class HomeController {
 		try {
 			getEmpresaDelegate().borrar(id, Cargo.class);
 			return cargos();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return new ModelAndView("error");
+		}
+
+	}
+	@RequestMapping("borraEmpleado.gin")
+	public ModelAndView borraEmpleado(int id) {
+
+		try {
+			getEmpresaDelegate().borrar(id, Empleado.class);
+			return empleados();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

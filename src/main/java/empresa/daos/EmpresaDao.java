@@ -31,6 +31,7 @@ public class EmpresaDao implements EmpresaDaoInterface {
 
 	@Override
 	public void borrar(int id, Class<?> clase) throws Exception {
+		if(getSesion()==null)
 		setSesion(getFactoria().openSession());
 		getSesion().beginTransaction();
 
@@ -53,6 +54,7 @@ public class EmpresaDao implements EmpresaDaoInterface {
 
 	@Override
 	public void grabaObjeto(Object objeto) throws Exception {
+		if(getSesion()==null)
 		setSesion(getFactoria().openSession());
 		getSesion().beginTransaction();
 		getSesion().saveOrUpdate(objeto);
