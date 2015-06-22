@@ -9,6 +9,9 @@ import java.util.List;
  * The persistent class for the CARGOS database table.
  * 
  */
+
+// Modificado por: Alberto
+
 @Entity
 @Table(name="CARGOS")
 @NamedQuery(name="Cargo.findAll", query="SELECT c FROM Cargo c")
