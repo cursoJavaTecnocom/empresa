@@ -5,7 +5,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+ <!-- chorreo en index -->
 	<table border="1">
 		<tr>
 			<td><a href="empresas.gin">EMPRESAS</a></td>
