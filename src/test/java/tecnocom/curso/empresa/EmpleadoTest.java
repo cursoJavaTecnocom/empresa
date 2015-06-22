@@ -23,7 +23,7 @@ import datos.Empresa;
 @FixMethodOrder(MethodSorters.JVM)
 public class EmpleadoTest {
 	
-	/*Modificado por Fran*/
+	/*Comentario para Git*/
 
 	@Autowired
 	private HomeController controler;
