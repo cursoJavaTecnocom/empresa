@@ -8,6 +8,9 @@ import java.util.List;
  * The persistent class for the CARGOS database table.
  * 
  */
+
+// Modificado por: Alberto
+
 @Entity
 @Table(name="CARGOS")
 @NamedQuery(name="Cargo.findAll", query="SELECT c FROM Cargo c")
@@ -18,6 +21,7 @@ public class Cargo implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 
+	
 	private String descripcion;
 
 	//bi-directional many-to-one association to Datoslaborale
